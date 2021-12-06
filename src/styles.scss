@@ -5,3 +5,74 @@ $c-secondary: #dbdbdb;
 $header: #ededed;
 $received: #ffffff;
 $sent: #dcf8c6;
+
+.header {
+  height: 8vh;
+  background-color: $header;
+}
+
+.profile {
+  height: 6vh;
+  border-radius: 50%;
+}
+
+.listprofile {
+  height: 8vh;
+  border-radius: 50%;
+}
+
+i {
+  color: $c-primary;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+}
+
+input {
+  font-size: 0.8rem;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.message {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  width: 50%;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.received {
+  background-color: $received;
+  align-self: start;
+  margin-left: 2rem;
+}
+
+.sent {
+  background-color: $sent;
+  align-self: end;
+  margin-right: 2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.time {
+  text-align: right;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+
+.active-chat {
+  background-color: whitesmoke;
+}
