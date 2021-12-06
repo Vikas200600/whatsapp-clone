@@ -3,9 +3,11 @@
   <div class="bg-bottom"></div>
 </div>
 
-<div class="messenger container position-absolute">
-  <app-list-area></app-list-area>
-  <app-chat-area></app-chat-area>
+<div class="messenger container position-absolute p-0">
+  <div class="d-flex">
+    <app-list-area class="col-4"></app-list-area>
+    <app-chat-area class="col-8"></app-chat-area>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
