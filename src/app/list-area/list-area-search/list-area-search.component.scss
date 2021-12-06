@@ -1,0 +1,14 @@
+@use "../../../styles.scss" as color;
+
+.messenger-navs-people-search {
+  background-color: whitesmoke;
+  height: 6vh;
+}
+
+.messenger-navs-people-searchbar {
+  background-color: color.$received;
+  height: 4vh;
+  input {
+    height: 4vh;
+  }
+}
