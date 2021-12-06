@@ -1,0 +1,12 @@
+@use "../styles.scss" as color;
+
+.bg {
+  &-top {
+    height: 25vh;
+    background-color: color.$c-primary;
+  }
+  &-bottom {
+    height: 75vh;
+    background-color: color.$c-secondary;
+  }
+}
