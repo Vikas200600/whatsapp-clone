@@ -7,6 +7,8 @@ import { ListAreaComponent } from './list-area/list-area.component';
 import { ChatAreaComponent } from './chat-area/chat-area.component';
 import { ListAreaSearchComponent } from './list-area/list-area-search/list-area-search.component';
 import { ListAreaListsComponent } from './list-area/list-area-lists/list-area-lists.component';
+import { ChatAreaWindowComponent } from './chat-area/chat-area-window/chat-area-window.component';
+import { ChatAreaInputComponent } from './chat-area/chat-area-input/chat-area-input.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { ListAreaListsComponent } from './list-area/list-area-lists/list-area-li
     ChatAreaComponent,
     ListAreaSearchComponent,
     ListAreaListsComponent,
+    ChatAreaWindowComponent,
+    ChatAreaInputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
