@@ -1,0 +1,7 @@
+@use "../../styles.scss" as color;
+
+.list-container {
+  height: 66vh;
+  background-color: color.$received;
+  overflow-y: scroll;
+}

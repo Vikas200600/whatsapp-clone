@@ -9,5 +9,10 @@
     </div>
   </div>
   <app-list-area-search></app-list-area-search>
-  <app-list-area-lists></app-list-area-lists>
+  <div class="list-container">
+    <app-list-area-lists
+      *ngFor="let user of users"
+      [user]="user"
+    ></app-list-area-lists>
+  </div>
 </div>
