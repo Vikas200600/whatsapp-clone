@@ -7,6 +7,5 @@ import { chatData } from './chatData';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'whatsapp';
   chatData = chatData;
 }

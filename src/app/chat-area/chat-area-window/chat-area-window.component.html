@@ -1,39 +1,10 @@
-<div class="messenger-chats-chat d-flex flex-column">
-  <div class="message received">
-    <p>Lorem ipsum dolor sit amet.</p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message received">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message sent">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat.
-      Obcaecati, error. Eos, officiis error.
-    </p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message received">
-    <p>Lorem, ipsum dolor.</p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message sent">
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta
-      explicabo nemo molestias minima iste autem reprehenderit ducimus at dolor?
-    </p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message received">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    <p class="time">17:22</p>
-  </div>
-  <div class="message sent">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam
-      exercitationem quidem hic quis nobis ad vitae!
-    </p>
-    <p class="time">17:22</p>
+<div class="messenger-chats-chat d-flex flex-column justify-content-end">
+  <div
+    *ngFor="let chat of chats"
+    class="message"
+    [ngClass]="chat['name'] === 'you' ? 'sent' : 'received'"
+  >
+    <p>{{ chat["message"] }}</p>
+    <p class="time">{{ chat["time"] }}</p>
   </div>
 </div>
