@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListAreaComponent implements OnInit {
   @Input('data') data: object;
+  @Input('activeUser') activeUser: string;
 
   constructor() {}
 

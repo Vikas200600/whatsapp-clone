@@ -8,4 +8,6 @@ import { chatData } from './chatData';
 })
 export class AppComponent {
   chatData = chatData;
+  userName = Object.keys(this.chatData)[0];
+  defaultUser = this.chatData[this.userName];
 }

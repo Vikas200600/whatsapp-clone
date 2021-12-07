@@ -5,8 +5,16 @@
 
 <div class="messenger container position-absolute p-0">
   <div class="d-flex">
-    <app-list-area class="col-4 border-end" [data]="chatData"></app-list-area>
-    <app-chat-area class="col-8" [user1]="chatData['user1']"></app-chat-area>
+    <app-list-area
+      class="col-4 border-end"
+      [data]="chatData"
+      [activeUser]="userName"
+    ></app-list-area>
+    <app-chat-area
+      class="col-8"
+      [userName]="userName"
+      [user]="defaultUser"
+    ></app-chat-area>
   </div>
 </div>
 

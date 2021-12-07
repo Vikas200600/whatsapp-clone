@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ListAreaListsComponent implements OnInit {
   @Input('user') user: string;
   @Input('userDetails') userDetails: object;
+  @Input('activeUser') activeUser: string;
+
   lastChat: object;
 
   constructor() {}
