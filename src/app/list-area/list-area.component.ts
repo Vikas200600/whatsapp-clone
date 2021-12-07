@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+// import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-list-area',
@@ -9,7 +10,14 @@ export class ListAreaComponent implements OnInit {
   @Input('data') data: object;
   @Input('activeUser') activeUser: string;
 
+  @Output() clickHandler = new EventEmitter();
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  getChats(key: string) {
+    this.clickHandler.emit(key);
+    console.log('list-area', key);
+  }
 }

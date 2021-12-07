@@ -9,11 +9,12 @@
       class="col-4 border-end"
       [data]="chatData"
       [activeUser]="userName"
+      (clickHandler)="updateChatWindow($event)"
     ></app-list-area>
     <app-chat-area
       class="col-8"
       [userName]="userName"
-      [user]="defaultUser"
+      [user]="user"
     ></app-chat-area>
   </div>
 </div>

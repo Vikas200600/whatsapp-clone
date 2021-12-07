@@ -1,6 +1,6 @@
 <div class="messenger-chats-chat d-flex flex-column justify-content-end">
   <div
-    *ngFor="let chat of chats"
+    *ngFor="let chat of chatDetails['chats']"
     class="message"
     [ngClass]="chat['name'] === 'you' ? 'sent' : 'received'"
   >

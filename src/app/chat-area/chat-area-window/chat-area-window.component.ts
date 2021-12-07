@@ -11,7 +11,5 @@ export class ChatAreaWindowComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    this.chats = this.chatDetails['chats'];
-  }
+  ngOnInit(): void {}
 }

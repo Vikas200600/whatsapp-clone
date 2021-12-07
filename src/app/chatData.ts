@@ -52,19 +52,19 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'how you',
+        message: ' extra texts how you',
         name: 'john1',
         time: '9:27AM',
         color: '#ebc634',
       },
       {
-        message: 'hey guyz',
+        message: 'hey guyz extra texts',
         name: 'you',
         time: '9:29AM',
         color: '#34ebe2',
       },
       {
-        message: 'some text 1',
+        message: 'some extra texts text 1',
         name: 'arun1',
         time: '9:25AM',
         color: '#eb344f',
@@ -100,7 +100,7 @@ export const chatData: object = {
         color: '#ebc634',
       },
       {
-        message: 'hey guyz',
+        message: 'hey extra texts guyz',
         name: 'you',
         time: '9:29AM',
         color: '#34ebe2',
@@ -112,7 +112,7 @@ export const chatData: object = {
         color: '#eb344f',
       },
       {
-        message: 'some text 1',
+        message: 'some text extra texts 1',
         name: 'aahi1',
         time: '9:25AM',
         color: '#34eb8c',
@@ -136,7 +136,7 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'how you',
+        message: 'how extra texts you',
         name: 'john1',
         time: '9:27AM',
         color: '#ebc634',
@@ -160,7 +160,7 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'last message 4',
+        message: 'last extra texts message 4',
         name: 'amal1',
         time: '10:40AM',
         color: '#ebc634',
@@ -172,7 +172,7 @@ export const chatData: object = {
     muted: false,
     chats: [
       {
-        message: 'hi',
+        message: 'hi extra texts',
         name: 'abhi',
         time: '9:25AM',
         color: '#34eb8c',
@@ -184,7 +184,7 @@ export const chatData: object = {
         color: '#ebc634',
       },
       {
-        message: 'hey guyz',
+        message: 'hey extra texts guyz',
         name: 'max1',
         time: '9:29AM',
         color: '#34ebe2',
@@ -202,7 +202,7 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'last message 5',
+        message: 'last extra texts message 5',
         name: 'amal1',
         time: '10:00AM',
         color: '#ebc634',
@@ -220,7 +220,7 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'how you',
+        message: 'extra texts how you',
         name: 'john1',
         time: '9:27AM',
         color: '#ebc634',
@@ -232,7 +232,7 @@ export const chatData: object = {
         color: '#34ebe2',
       },
       {
-        message: 'some text 1',
+        message: 'some text extra texts 1',
         name: 'arun1',
         time: '9:25AM',
         color: '#eb344f',
@@ -244,7 +244,7 @@ export const chatData: object = {
         color: '#34eb8c',
       },
       {
-        message: 'last message 6',
+        message: 'extra texts last message 6',
         name: 'amal1',
         time: '9:40AM',
         color: '#ebc634',

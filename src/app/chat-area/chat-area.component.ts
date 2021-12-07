@@ -12,4 +12,8 @@ export class ChatAreaComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  ngOnChanges(): void {
+    console.log('chat-area', this.userDetails);
+  }
 }

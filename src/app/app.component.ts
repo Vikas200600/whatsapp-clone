@@ -9,5 +9,10 @@ import { chatData } from './chatData';
 export class AppComponent {
   chatData = chatData;
   userName = Object.keys(this.chatData)[0];
-  defaultUser = this.chatData[this.userName];
+  user = this.chatData[this.userName];
+
+  updateChatWindow(key: string) {
+    this.userName = key;
+    this.user = this.chatData[key];
+  }
 }
