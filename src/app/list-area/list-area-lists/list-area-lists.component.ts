@@ -8,7 +8,7 @@ import { mockUsers } from '../../userSample';
   styleUrls: ['./list-area-lists.component.scss'],
 })
 export class ListAreaListsComponent implements OnInit {
-  @Input('user') user: object = {};
+  @Input('user') user: User;
 
   constructor() {}
 
