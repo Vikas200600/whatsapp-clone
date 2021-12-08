@@ -4,6 +4,9 @@
     class="message"
     [ngClass]="chat['name'] === 'you' ? 'sent' : 'received'"
   >
+    <p *ngIf="!(chat.name === 'you')" [style.color]="chat.color">
+      {{ chat.name }}
+    </p>
     <p>{{ chat["message"] }}</p>
     <p class="time">{{ chat["time"] }}</p>
   </div>
