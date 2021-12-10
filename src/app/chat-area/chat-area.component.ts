@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./chat-area.component.scss'],
 })
 export class ChatAreaComponent implements OnInit {
-  @Input('userName') userName: string;
+  @Input('userName') groupName: string;
   @Input('user') userDetails: object;
 
   constructor() {}

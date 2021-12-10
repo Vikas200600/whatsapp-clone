@@ -3,7 +3,7 @@
     <img class="profile" src="../../assets/profiles/noprofile.png" />
     <div class="d-flex justify-content-between w-100 align-items-center px-3">
       <div>
-        <h6>{{ userName }}</h6>
+        <h6>{{ groupName }}</h6>
         <p>last seen at 17:50</p>
       </div>
       <div>
@@ -14,5 +14,5 @@
     </div>
   </div>
   <app-chat-area-window [userDetails]="userDetails"></app-chat-area-window>
-  <app-chat-area-input></app-chat-area-input>
+  <app-chat-area-input [groupName]="groupName"></app-chat-area-input>
 </div>

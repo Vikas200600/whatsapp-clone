@@ -6,9 +6,13 @@ import { chatData } from '../chatData';
   providedIn: 'root',
 })
 export class DataService {
-  subject = new BehaviorSubject({});
+  chatData: object = chatData;
+  subject = new BehaviorSubject(this.chatData);
 
-  constructor() {
-    this.subject.next(chatData);
+  constructor() {}
+
+  getNewMessage(groupName: string, newMessage: object) {
+    chatData[groupName].chats.push(newMessage);
+    this.subject.next(JSON.parse(JSON.stringify(chatData)));
   }
 }

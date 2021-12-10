@@ -3,7 +3,12 @@
 >
   <div class="d-flex align-items-center">
     <i class="far fa-smile p-2"></i>
-    <input type="text" placeholder="Type a message" class="w-100 p-1" />
-    <i class="fas fa-microphone p-2"></i>
+    <input
+      type="text"
+      placeholder="Type a message"
+      class="p-1"
+      [(ngModel)]="message"
+    />
+    <i class="fas fa-paper-plane p-2" (click)="sendMessage()"></i>
   </div>
 </div>
