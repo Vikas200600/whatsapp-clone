@@ -17,5 +17,6 @@ export class ListAreaListsComponent implements OnInit {
   ngOnInit(): void {
     let chatLength = this.userDetails['chats'].length;
     this.lastChat = this.userDetails['chats'][chatLength - 1];
+    console.log('lists', this.userDetails);
   }
 }
