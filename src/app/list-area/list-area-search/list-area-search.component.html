@@ -17,6 +17,12 @@
     "
   >
     <i class="fas fa-search me-2"></i>
-    <input type="text" placeholder="Search for people" class="px-1" />
+    <input
+      type="text"
+      placeholder="Search Whatsapp"
+      class="px-1"
+      [(ngModel)]="searchKey"
+      (ngModelChange)="this.dataService.getSearch(searchKey)"
+    />
   </div>
 </div>
