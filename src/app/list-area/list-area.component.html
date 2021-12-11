@@ -10,13 +10,21 @@
   </div>
   <app-list-area-search></app-list-area-search>
   <div class="lists">
-    <app-list-area-lists
-      *ngFor="let key of data['keys']"
-      [userDetails]="data[key]"
-      [user]="key"
-      [activeUser]="activeUser"
-      (click)="getChats(key)"
-    ></app-list-area-lists>
+    <ng-container *ngIf="data['keys']">
+      <app-list-area-lists
+        *ngFor="let key of data['keys']"
+        [userDetails]="data[key]"
+        [user]="key"
+        [activeUser]="activeUser"
+        (click)="getChats(key)"
+      ></app-list-area-lists>
+    </ng-container>
+    <p
+      *ngIf="data['keys'].length === 0"
+      class="d-flex justify-content-center m-5"
+    >
+      No Results Found
+    </p>
   </div>
 </div>
 

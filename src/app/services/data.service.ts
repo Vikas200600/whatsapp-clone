@@ -6,25 +6,33 @@ import { chatData } from '../chatData';
   providedIn: 'root',
 })
 export class DataService {
-  chatData: object = chatData;
+  masterChatData: object = chatData;
+  chatData: object = {
+    ...this.masterChatData,
+  };
   subject = new BehaviorSubject(this.chatData);
 
   constructor() {}
 
   getNewMessage(groupName: string, newMessage: object) {
     chatData[groupName]['chats'].push(newMessage);
-    this.subject.next(JSON.parse(JSON.stringify(chatData)));
+    this.chatData = { ...this.chatData };
+    this.sendToSubcribers(this.chatData);
   }
 
   getSearch(searchKey: string) {
-    if (!searchKey) {
-      chatData['keys'] = Object.keys(this.chatData);
-      chatData['keys'].pop();
-    } else {
-      chatData['keys'] = this.chatData['keys'].filter((key) =>
-        key.includes(searchKey)
-      );
-    }
-    this.subject.next(JSON.parse(JSON.stringify(chatData)));
+    console.log('serachFun - key', searchKey);
+    const filterKeys: string[] = this.masterChatData['keys'].filter((key) =>
+      key.includes(searchKey)
+    );
+    this.chatData = {
+      ...this.chatData,
+      keys: [...filterKeys],
+    };
+    this.sendToSubcribers(this.chatData);
+  }
+
+  sendToSubcribers(updatedChatdata: object) {
+    this.subject.next(JSON.parse(JSON.stringify(updatedChatdata)));
   }
 }

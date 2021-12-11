@@ -1,5 +1,5 @@
 export const chatData: object = {
-  user1: {
+  'Tech Ninjas': {
     profileImg: 'profile_picture.jpg',
     muted: true,
     chats: [
@@ -41,7 +41,7 @@ export const chatData: object = {
       },
     ],
   },
-  user2: {
+  'Don’t join': {
     profileImg: 'chatareaprofile.png',
     muted: false,
     chats: [
@@ -83,7 +83,7 @@ export const chatData: object = {
       },
     ],
   },
-  user3: {
+  'Life for friends': {
     profileImg: 'one.jpg',
     muted: false,
     chats: [
@@ -125,7 +125,7 @@ export const chatData: object = {
       },
     ],
   },
-  user4: {
+  'The Untouchables': {
     profileImg: 'two.jpg',
     muted: true,
     chats: [
@@ -167,7 +167,7 @@ export const chatData: object = {
       },
     ],
   },
-  user5: {
+  'Life and Music': {
     profileImg: 'chatareaprofile.png',
     muted: false,
     chats: [
@@ -209,7 +209,7 @@ export const chatData: object = {
       },
     ],
   },
-  user6: {
+  'The Walkie Talkie': {
     profileImg: 'three.jpg',
     muted: true,
     chats: [
@@ -251,7 +251,7 @@ export const chatData: object = {
       },
     ],
   },
-  user7: {
+  'People of my life': {
     profileImg: 'one.jpg',
     muted: true,
     chats: [
@@ -293,7 +293,7 @@ export const chatData: object = {
       },
     ],
   },
-  user8: {
+  'Country’s future weapons': {
     profileImg: 'three.jpg',
     muted: false,
     chats: [
@@ -336,13 +336,13 @@ export const chatData: object = {
     ],
   },
   keys: [
-    'user1',
-    'user2',
-    'user3',
-    'user4',
-    'user5',
-    'user6',
-    'user7',
-    'user8',
+    'Tech Ninjas',
+    'Don’t join',
+    'Life for friends',
+    'The Untouchables',
+    'Life and Music',
+    'The Walkie Talkie',
+    'People of my life',
+    'Country’s future weapons',
   ],
 };
