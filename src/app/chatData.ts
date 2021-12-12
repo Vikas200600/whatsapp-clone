@@ -1,6 +1,6 @@
 export const chatData: object = {
   'Tech Ninjas': {
-    profileImg: 'profile_picture.jpg',
+    profileImg: './../assets/profiles/techs',
     muted: true,
     chats: [
       {
@@ -42,7 +42,7 @@ export const chatData: object = {
     ],
   },
   'Don’t join': {
-    profileImg: 'chatareaprofile.png',
+    profileImg: './../assets/profiles/dont',
     muted: false,
     chats: [
       {
