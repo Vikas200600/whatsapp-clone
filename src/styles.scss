@@ -13,11 +13,14 @@ $sent: #dcf8c6;
 
 .profile {
   height: 6vh;
+  width: 6vh;
   border-radius: 50%;
 }
 
 .listprofile {
   height: 7vh;
+  width: 7vh;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -57,14 +60,18 @@ input {
   margin-right: 2rem;
 }
 
+p,
+h6 {
+  margin: 0;
+  cursor: default;
+}
+
 p {
   font-size: 0.8rem;
-  margin: 0;
 }
 
 h6 {
   font-size: 1rem;
-  margin: 0;
 }
 
 .time {

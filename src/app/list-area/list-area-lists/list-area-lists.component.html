@@ -2,7 +2,7 @@
   class="d-flex p-2 pe-0 pb-0"
   [ngClass]="activeUser === user ? 'active-chat' : ''"
 >
-  <img class="listprofile me-2" src="../../../assets/profiles/noprofile.png" />
+  <img class="listprofile me-2" [src]="userDetails['profileImg']" />
   <div class="d-flex w-100 justify-content-between border-bottom pe-2">
     <div>
       <h6 class="m-0">{{ user }}</h6>

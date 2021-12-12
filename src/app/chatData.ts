@@ -1,6 +1,6 @@
 export const chatData: object = {
   'Tech Ninjas': {
-    profileImg: './../assets/profiles/techs',
+    profileImg: '../../../assets/profiles/techs.jfif',
     muted: true,
     chats: [
       {
@@ -42,7 +42,7 @@ export const chatData: object = {
     ],
   },
   'Don’t join': {
-    profileImg: './../assets/profiles/dont',
+    profileImg: '../../../assets/profiles/dont.jfif',
     muted: false,
     chats: [
       {
@@ -84,7 +84,7 @@ export const chatData: object = {
     ],
   },
   'Life for friends': {
-    profileImg: 'one.jpg',
+    profileImg: '../../../assets/profiles/friends.png',
     muted: false,
     chats: [
       {
@@ -126,7 +126,7 @@ export const chatData: object = {
     ],
   },
   'The Untouchables': {
-    profileImg: 'two.jpg',
+    profileImg: '../../../assets/profiles/untouch.png',
     muted: true,
     chats: [
       {
@@ -168,7 +168,7 @@ export const chatData: object = {
     ],
   },
   'Life and Music': {
-    profileImg: 'chatareaprofile.png',
+    profileImg: '../../../assets/profiles/music.jfif',
     muted: false,
     chats: [
       {
@@ -210,7 +210,7 @@ export const chatData: object = {
     ],
   },
   'The Walkie Talkie': {
-    profileImg: 'three.jpg',
+    profileImg: '../../../assets/profiles/walkie.jfif',
     muted: true,
     chats: [
       {
@@ -252,7 +252,7 @@ export const chatData: object = {
     ],
   },
   'People of my life': {
-    profileImg: 'one.jpg',
+    profileImg: '../../../assets/profiles/peoples.jfif',
     muted: true,
     chats: [
       {
@@ -294,7 +294,7 @@ export const chatData: object = {
     ],
   },
   'Country’s future weapons': {
-    profileImg: 'three.jpg',
+    profileImg: '../../../assets/profiles/weapon.jfif',
     muted: false,
     chats: [
       {

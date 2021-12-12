@@ -23,7 +23,7 @@ export class DataService {
   getSearch(searchKey: string) {
     console.log('serachFun - key', searchKey);
     const filterKeys: string[] = this.masterChatData['keys'].filter((key) =>
-      key.includes(searchKey)
+      key.toLowerCase().includes(searchKey.toLowerCase())
     );
     this.chatData = {
       ...this.chatData,
